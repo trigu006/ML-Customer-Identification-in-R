@@ -493,7 +493,7 @@ nnProspectResults   <- cbind(HHuniqueID = prospects$HHuniqueID, probability = as
 # EDA on top-100 prospects
 nn_prospects_df     <- inner_join(joinProspects, as.data.frame(top_100_nn), by = c('HHuniqueID'))
 
-write.csv(nn_prospects_df, "/Users/trigu006/Documents/Courses/CSCI E-96 - Data Mining for Business/Case III - Submission/trigueros_Case_III_scores.csv", row.names = FALSE)
+write.csv(nn_prospects_df, "specify_file_name_here.csv", row.names = FALSE)
 
   # Gender - roughly equal split between females and males
   cro(nn_prospects_df$headOfhouseholdGender)
